@@ -1,0 +1,9 @@
+Successful installation requires the following:-
+
+1. The file "database_dump" in the same folder as the "install". The file can be downloaded from https://www.dropbox.com/s/jek380lz08yp1uv/database_dump?dl=0
+
+2. Create a folder named "traps_vari_output" if not existing already. This is required for running the binary "TraPS_VarI"
+
+3. May need installation of 'sudo apt-get install python3-dev libmysqlclient-dev' and 'pip install mysqlclient'
+
+4. Usage: python3 -m TraPS_VarI -f=<file> [-filter -assembly=37 or 38]

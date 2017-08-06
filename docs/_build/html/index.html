@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Installation &#8212; TraPS-VarI 0.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <img alt="_images/banner.png" src="_images/banner.png" />
+<div class="toctree-wrapper compound">
+</div>
+<p><strong>TraPS VarI</strong> is a tool to map the single nucleotide polymorphism mutations recorded in <strong>.vcf</strong> (VCF 4.0) files to the protein topology and predict the effect of
+an individual-specific genotype on the presence or absence of membrane-proximal SH2 binding motifs [Y**Q]. Additionally, the algorithm also finds matches for
+Uniprot Protein Name entries with the records of the therapeutic target database (ttd) and DrugBank.</p>
+<div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>TraPS VarI will add itself as a module to python.</p>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>python 3.4 or newer</li>
+<li>MySQLdb module for python (MySQL-python)</li>
+<li>access to a MySQL database (InnoDB engine with spatial index support - v5.7 or higher)</li>
+</ul>
+</div>
+<div class="section" id="how-to-install">
+<h2>How to Install<a class="headerlink" href="#how-to-install" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Extract the package to the desired install location and run the installation script with the command:</dt>
+<dd>python install.py</dd>
+</dl>
+<p>and simply follow the instructions appearing on the commandline</p>
+</div>
+</div>
+<div class="section" id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<p>python TraPS VarI . py {−p=&lt;CHR: POS&gt; −m=&lt;REF/ALT &gt;| −f=&lt;filename&gt; [options]} [−assembly=&lt;assemblyversion&gt;]</p>
+<ul class="simple">
+<li>-p=chr:pos to look up a single mutation (i.e. A/T) at the position chr:pos (only with -m)</li>
+<li>-m=REF/ALT mutation to look up (only in conjunction with -p)</li>
+<li>-f= to run the script on a file in vcf format</li>
+<li>-fout file to save the result to (default is inputfile traps vari output)</li>
+<li>-filter use to omit all lines from the result that do not contain a transmembrane protein mutation</li>
+<li>-assembly=37/38 (which assembly to use, dbSNP is only supported for 38)</li>
+</ul>
+<p>The script will generate an outputfile namely traps_vari_output with the following appended columns:-</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Protein position,</li>
+<li>Protein aminoacid change,</li>
+<li>mutation effect,</li>
+<li>STAT3 binding motif alterations (namely, CREATED, DESTROYED or PRESENT),</li>
+<li>Hits in the TTD database and</li>
+<li>Hits in the DrugBank database.</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="how-it-works">
+<h1>How it works<a class="headerlink" href="#how-it-works" title="Permalink to this headline">¶</a></h1>
+<p>TraPS VarI processes the vcf file line by line. It takes the position, matches this against
+coding reqions in the RefSeq database. It then matches the CDS to it’s appropriate
+UniProt entry, modifies the CDS according to the mutation and retranslates the resulting
+CDS. The effect of the mutation is derived from the difference between those two entries.
+In it’s current version it only matches against UniProts main entries and not their
+isoforms (support for this is planned). It also looks up the position and mutation in the
+dbSNP dataset, if the mutation is contained there it adds the dbSNPid to the entry. It
+also checks the found refseq and uniprot ids against the TTD and DrugBank databases.</p>
+</div>
+<div class="section" id="graphical-summary">
+<h1>Graphical Summary<a class="headerlink" href="#graphical-summary" title="Permalink to this headline">¶</a></h1>
+<img alt="_images/summary.png" src="_images/summary.png" />
+<div class="section" id="source-code">
+<h2>Source code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://gitlab.com/VJ-Ulaganathan/TraPS-VarI">https://gitlab.com/VJ-Ulaganathan/TraPS-VarI</a></p>
+</div>
+<div class="section" id="binaries-for-linux-and-windows">
+<h2>Binaries for Linux and Windows<a class="headerlink" href="#binaries-for-linux-and-windows" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/VJ-Ulaganathan/TraPS-VarI">https://github.com/VJ-Ulaganathan/TraPS-VarI</a></p>
+</div>
+<div class="section" id="biological-significance">
+<h2>Biological Significance<a class="headerlink" href="#biological-significance" title="Permalink to this headline">¶</a></h2>
+<p>The presence of even a single STAT3 recruitment site in the the single-pass type I membrane proteins
+significantly elevates the levels of tyrosine phosphorylation in STAT3 thereby enhancing the amplitude of STAT3 signaling. Depending on the expression patterns
+of the receptor variant, pleiotropic effects are expected in vivo.
+STAT3-enhancing gain-of-function SNPs in the germline genome also contributes to accelerated cancer progression &amp; poor prognosis. However, cells are rendered sensitive in a
+genotype/allele-specific manner to growth inhibition by small molecule or RNA interference mediated inhibition of STAT3 signaling pathways (Ulaganathan et al, Nature 2015: <a class="reference external" href="https://doi.org/10.1038/nature16449">https://doi.org/10.1038/nature16449</a>).</p>
+<div class="section" id="support">
+<h3>Support<a class="headerlink" href="#support" title="Permalink to this headline">¶</a></h3>
+<p>If you are having issues, please let me know:
+<a class="reference external" href="mailto:ulaganat&#37;&#52;&#48;biochem&#46;mpg&#46;de">ulaganat<span>&#64;</span>biochem<span>&#46;</span>mpg<span>&#46;</span>de</a></p>
+</div>
+<div class="section" id="faq">
+<h3>FAQ<a class="headerlink" href="#faq" title="Permalink to this headline">¶</a></h3>
+<p>To be updated soon.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Installation</a><ul>
+<li><a class="reference internal" href="#requirements">Requirements</a></li>
+<li><a class="reference internal" href="#how-to-install">How to Install</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#how-it-works">How it works</a></li>
+<li><a class="reference internal" href="#graphical-summary">Graphical Summary</a><ul>
+<li><a class="reference internal" href="#source-code">Source code</a></li>
+<li><a class="reference internal" href="#binaries-for-linux-and-windows">Binaries for Linux and Windows</a></li>
+<li><a class="reference internal" href="#biological-significance">Biological Significance</a><ul>
+<li><a class="reference internal" href="#support">Support</a></li>
+<li><a class="reference internal" href="#faq">FAQ</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Vijay K. Ulaganathan.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -178,7 +178,7 @@ step-4: Validation
 
 Support
 *******
-A manuscript is currently under revision, citation records will be updated as soon as possible.
+Citation records will be updated as soon as possible.
 
 If you have any suggestions, please let me know:
 ulaganat@biochem.mpg.de

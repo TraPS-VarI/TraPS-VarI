@@ -102,7 +102,7 @@ Motif-1
 Motif-2
 ********
 
-* The immunoreceptor tyrosine-based **inhibition** motifs (ITIM) are present in the cytoplasmic domains of transmembrane receptors of virtuall all immune cells. Recruitment of specific phosphatases to the tyrosine-phosphorylated ITIM results in the complete inhibition or downmodulation of immune cell effector functions (Ravetch et al, Science 2000: https://doi.org/10.1126/science.290.5489.84)
+* The immunoreceptor tyrosine-based **inhibition** motifs (ITIM) are present in the cytoplasmic domains of transmembrane receptors of virtually all immune cells. Recruitment of specific phosphatases to the tyrosine-phosphorylated ITIM results in the complete inhibition or downmodulation of immune cell effector functions (Daëron et al, Immunity 1995: https://doi.org/10.1016/1074-7613(95)90134-5)
 
 Motif-3
 ********

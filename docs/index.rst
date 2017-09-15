@@ -10,9 +10,9 @@
    :maxdepth: 2
    :caption: Contents:
 
-**TraPS VarI** (Transmemrane Protein Sequence Variant Identifier)is a tool to map the single nucleotide polymorphism mutations recorded in **.vcf** (VCF 4.0) files to the protein topology and predict the effect of an individual-specific genotype on the presence or absence of membrane-proximal SH2 binding motifs such as,
+**TraPS-VarI** (Transmemrane Protein Sequence Variant Identifier)is a tool to map the single nucleotide polymorphism mutations recorded in **.vcf** (VCF 4.0) files to the protein topology and predict the effect of an individual-specific genotype on the presence or absence of membrane-proximal SH2 binding motifs such as,
 
-* STAT3 binding site [Y**Q],
+* STAT3 binding site [YxxQ],
 * ITIMs (immunoreceptor tyrosine-based **inhibition** motif) [S/I/V/LxYxxI/V/L]
 * ITAMs (immunoreceptor tyrosine-based **activation** motif) [YxxI/Lx(6-30)YxxI/L]
 
@@ -21,7 +21,7 @@ Additionally, the algorithm also finds matches for Uniprot Protein Name entries 
 ************
 Installation
 ************
-TraPS VarI will add itself as a module to python.
+TraPS-VarI will add itself as a module to python.
 
 Requirements
 ************
@@ -69,7 +69,7 @@ python TraPS_VarI.py {−p=<CHR: POS> −m=<REF/ALT >| −f=<filename> [options]
 ***************
 How it works
 ***************
-TraPS VarI processes the vcf file line by line. It takes the position, matches this against
+TraPS-VarI processes the vcf file line by line. It takes the position, matches this against
 coding reqions in the RefSeq database. It then matches the CDS to it’s appropriate
 UniProt entry, modifies the CDS according to the mutation and retranslates the resulting
 CDS. The effect of the mutation is derived from the difference between those two entries.

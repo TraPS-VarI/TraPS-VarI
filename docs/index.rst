@@ -10,7 +10,7 @@
    :maxdepth: 2
    :caption: Contents:
 
-**TraPS-VarI** (Transmemrane Protein Sequence Variant Identifier)is a tool to map the single nucleotide polymorphism mutations recorded in **.vcf** (VCF 4.0) files to the protein topology and predict the effect of an individual-specific genotype on the presence or absence of membrane-proximal SH2 binding motifs such as,
+**TraPS-VarI** (Transmemrane Protein Sequence Variant Identifier) is a tool to map the single nucleotide polymorphism mutations recorded in **.vcf** (VCF 4.0) files to the protein topology and predict the effect of an individual-specific genotype on the presence or absence of membrane-proximal SH2 binding motifs such as,
 
 * STAT3 binding site [YxxQ],
 * ITIMs (immunoreceptor tyrosine-based **inhibition** motif) [S/I/V/LxYxxI/V/L]
@@ -97,7 +97,7 @@ Biological Significance
 Motif-1
 ********
 
-* The **STAT3 binding** motifs (YXXQ)are present in the juxtamembrane regions of many transmembrane receptors that are expressed in many cell types. Recruitment of STAT3 to the tyrosine-phosphorylated YXXQ motifs significantly enhances the amplitude of STAT3 signaling. Depending on the cell/tissue-specific expression patterns of the receptor variant, pleiotropic effects are expected in vivo. Ubiquitous expression of STAT3-enhancing, gain-of-function SNPs in the germline genome contributes to accelerated cancer progression & poor prognosis. However, cells are rendered sensitive in a genotype/allele-specific manner to growth inhibition by small molecule or RNA interference mediated inhibition of STAT3 signaling pathways (Ulaganathan et al, Nature 2015: https://doi.org/10.1038/nature16449).
+* The **STAT3 binding** motifs (YXXQ) are present in the juxtamembrane regions of many transmembrane receptors that are expressed in many cell types. Recruitment of STAT3 to the tyrosine-phosphorylated YXXQ motifs significantly enhances the amplitude of STAT3 signaling. Depending on the cell/tissue-specific expression patterns of the receptor variant, pleiotropic effects are expected in vivo. Ubiquitous expression of STAT3-enhancing, gain-of-function SNPs in the germline genome contributes to accelerated cancer progression & poor prognosis. However, cells are rendered sensitive in a genotype/allele-specific manner to growth inhibition by small molecule or RNA interference mediated inhibition of STAT3 signaling pathways (Ulaganathan et al, Nature 2015: https://doi.org/10.1038/nature16449).
 
 **An example of TraPS-VarI identified STAT3 motif-creating germline variant:**
 

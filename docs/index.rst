@@ -54,7 +54,7 @@ python TraPS_VarI.py {−p=<CHR: POS> −m=<REF/ALT >| −f=<filename> [options]
 * -assembly=37/38 (which assembly to use, dbSNP is only supported for 38)
 
 
-.. note:: The script will generate outputfiles namely -TraPS_VarI.Output-1, 2 & 3 each with the following appended columns:-
+.. note:: The script will generate output files namely -TraPS_VarI.Output-1, 2 & 3 each with the following appended columns:-
 	
 	1. Uniprot Entry name,
 	2. Uniprot Entry ID,	

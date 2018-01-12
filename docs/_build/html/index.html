@@ -1,20 +1,17 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Installation &#8212; TraPS-VarI_Documentation v0.0.1 documentation</title>
-    
+    <title>Installation &#8212; TraPS-VarI_Documentation v0.0.2 documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     'v0.0.1',
+        VERSION:     'v0.0.2',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true,
@@ -33,7 +30,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head>
-  <body role="document">
+  <body>
   
 
     <div class="document">
@@ -44,12 +41,16 @@
   <img alt="_images/banner.png" src="_images/banner.png" />
 <div class="toctree-wrapper compound">
 </div>
-<p><strong>TraPS VarI</strong> is a tool to map the single nucleotide polymorphism mutations recorded in <strong>.vcf</strong> (VCF 4.0) files to the protein topology and predict the effect of
-an individual-specific genotype on the presence or absence of membrane-proximal SH2 binding motifs [Y**Q]. Additionally, the algorithm also finds matches for
-Uniprot Protein Name entries with the records of the therapeutic target database (ttd) and DrugBank.</p>
+<p><strong>TraPS-VarI</strong> (Transmemrane Protein Sequence Variant Identifier) is a tool to map the single nucleotide polymorphism mutations recorded in <strong>.vcf</strong> (VCF 4.0) files to the protein topology and predict the effect of an individual-specific genotype on the presence or absence of membrane-proximal SH2 binding motifs such as,</p>
+<ul class="simple">
+<li>STAT3 binding site [YxxQ],</li>
+<li>ITIMs (immunoreceptor tyrosine-based <strong>inhibition</strong> motif) [S/I/V/LxYxxI/V/L]</li>
+<li>ITAMs (immunoreceptor tyrosine-based <strong>activation</strong> motif) [YxxI/Lx(6-30)YxxI/L]</li>
+</ul>
+<p>Additionally, the algorithm also finds matches for Uniprot Protein Name entries with the records of the therapeutic target database (ttd) and DrugBank.</p>
 <div class="section" id="installation">
 <h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
-<p>TraPS VarI will add itself as a module to python.</p>
+<p>TraPS-VarI will add itself as a module to python.</p>
 <div class="section" id="requirements">
 <h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -84,14 +85,14 @@ Uniprot Protein Name entries with the records of the therapeutic target database
 </ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>The script will generate an outputfile namely traps_vari_output with the following appended columns:-</p>
+<p>The script will generate output files namely -TraPS_VarI.Output-1, 2 &amp; 3 each with the following appended columns:-</p>
 <ol class="last arabic simple">
 <li>Uniprot Entry name,</li>
 <li>Uniprot Entry ID,</li>
 <li>Protein position,</li>
 <li>Protein aminoacid change,</li>
 <li>Mutation effect,</li>
-<li>STAT3 binding motif alterations (namely, CREATED, DESTROYED or PRESENT),</li>
+<li>Tyrsoine-based sequence motifs such as SH2 binding YxxQ, ITAM &amp; ITAM (with annotations CREATED, DESTROYED or PRESENT),</li>
 <li>Topology domain,</li>
 <li>Hits in the TTD database and</li>
 <li>Hits in the DrugBank database.</li>
@@ -100,7 +101,7 @@ Uniprot Protein Name entries with the records of the therapeutic target database
 </div>
 <div class="section" id="how-it-works">
 <h1>How it works<a class="headerlink" href="#how-it-works" title="Permalink to this headline">¶</a></h1>
-<p>TraPS VarI processes the vcf file line by line. It takes the position, matches this against
+<p>TraPS-VarI processes the vcf file line by line. It takes the position, matches this against
 coding reqions in the RefSeq database. It then matches the CDS to it’s appropriate
 UniProt entry, modifies the CDS according to the mutation and retranslates the resulting
 CDS. The effect of the mutation is derived from the difference between those two entries.
@@ -109,52 +110,69 @@ isoforms (support for this is planned). It also looks up the position and mutati
 dbSNP dataset, if the mutation is contained there it adds the dbSNPid to the entry. It
 also checks the found refseq and uniprot ids against the TTD and DrugBank databases.</p>
 </div>
-<div class="section" id="graphical-summary">
-<h1>Graphical Summary<a class="headerlink" href="#graphical-summary" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="summary">
+<h1>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h1>
 <img alt="_images/summary.png" src="_images/summary.png" />
 </div>
 <div class="section" id="source-code">
 <h1>Source code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://gitlab.com/VJ-Ulaganathan/TraPS-VarI">https://gitlab.com/VJ-Ulaganathan/TraPS-VarI</a></p>
-<div class="section" id="binaries-for-linux-and-windows">
-<h2>Binaries for Linux and Windows<a class="headerlink" href="#binaries-for-linux-and-windows" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="https://github.com/VJ-Ulaganathan/TraPS-VarI">https://github.com/VJ-Ulaganathan/TraPS-VarI</a></p>
-</div>
 </div>
 <div class="section" id="biological-significance">
 <h1>Biological Significance<a class="headerlink" href="#biological-significance" title="Permalink to this headline">¶</a></h1>
-<p>The presence of even a single STAT3 recruitment site in the the single-pass type I membrane proteins
-significantly elevates the levels of tyrosine phosphorylation in STAT3 thereby enhancing the amplitude of STAT3 signaling. Depending on the cell/tissue-specific expression patterns
-of the receptor variant, pleiotropic effects are expected in vivo.
-Ubiquitous expression of STAT3-enhancing gain-of-function SNPs in the germline genome contributes to accelerated cancer progression &amp; poor prognosis. However, cells are rendered sensitive in a
-genotype/allele-specific manner to growth inhibition by small molecule or RNA interference mediated inhibition of STAT3 signaling pathways (Ulaganathan et al, Nature 2015: <a class="reference external" href="https://doi.org/10.1038/nature16449">https://doi.org/10.1038/nature16449</a>).
-Thus TraPS-VarI can serve as an important annotation tool for personalized medicine in examining the patient-specific genotyping dataset.</p>
-<div class="section" id="example-1">
-<h2>Example-1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="identifying-the-stat3-enhancing-germline-variant-tmem9-p-y122y-which-is-found-in-about-31-of-the-general-population">
-<h3>Identifying the STAT3-enhancing germline variant TMEM9 <strong>p.Y122Y</strong> which is found in about 31% of the general population<a class="headerlink" href="#identifying-the-stat3-enhancing-germline-variant-tmem9-p-y122y-which-is-found-in-about-31-of-the-general-population" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="motif-1">
+<h2>Motif-1<a class="headerlink" href="#motif-1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>The <strong>STAT3 binding</strong> motifs (YXXQ) are present in the juxtamembrane regions of many transmembrane receptors that are expressed in many cell types. Recruitment of STAT3 to the tyrosine-phosphorylated YXXQ motifs significantly enhances the amplitude of STAT3 signaling. Depending on the cell/tissue-specific expression patterns of the receptor variant, pleiotropic effects are expected in vivo. Ubiquitous expression of STAT3-enhancing, gain-of-function SNPs in the germline genome contributes to accelerated cancer progression &amp; poor prognosis. However, cells are rendered sensitive in a genotype/allele-specific manner to growth inhibition by small molecule or RNA interference mediated inhibition of STAT3 signaling pathways (Ulaganathan et al, Nature 2015: <a class="reference external" href="https://doi.org/10.1038/nature16449">https://doi.org/10.1038/nature16449</a>).</li>
+</ul>
+<p><strong>An example of TraPS-VarI identified STAT3 motif-creating germline variant:</strong></p>
+<p>Chr1 1211745 C/T (rs776902723): TNFRSF4_p.R241Q = [YLL(R/Q)]</p>
+</div>
+<div class="section" id="motif-2">
+<h2>Motif-2<a class="headerlink" href="#motif-2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>The immunoreceptor tyrosine-based <strong>inhibition</strong> motifs (ITIM) are present in the cytoplasmic domains of transmembrane receptors of virtually all immune cells. Recruitment of specific phosphatases to the tyrosine-phosphorylated ITIM results in the complete inhibition or downmodulation of immune cell effector functions (Daëron et al, Immunity 1995: <a class="reference external" href="https://doi.org/10.1016/1074-7613(95)90134-5">https://doi.org/10.1016/1074-7613(95)90134-5</a>)</li>
+</ul>
+<p><strong>An example of TraPS-VarI identified ITIM motif-creating germline variant:</strong></p>
+<p>Chr2 203734829 A/G (rs200221759): CD28_p.M194V = [SDYMN(M/V)]</p>
+</div>
+<div class="section" id="motif-3">
+<h2>Motif-3<a class="headerlink" href="#motif-3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>The immunoreceptor tyrosine-based <strong>activation</strong> motif (ITAM) was initially recognized as a common sequence in the cytoplasmic tails of the signaling chains associated with the T-cellreceptor (TCR), B-cell receptor (BCR), and certain Fc receptors. Dual-tyrosine phosphorylated ITAM serve as docking sites for various proteins such as the tandem SH2 domains of Syk family PTK, viz., ZAP-70 or Syk and are important for positive signal transduction in immune cells (Reth, Nature 1989: <a class="reference external" href="https://doi.org/10.1038/338383b0">https://doi.org/10.1038/338383b0</a>).</li>
+</ul>
+<p><strong>An example of TraPS-VarI identified ITAM motif-creating germline variant:</strong></p>
+<p>Chr4 38796959 T/A (rs202172776): TLR1_p.N625Y = [YLDLPWYLRMVCQWTQTRRRAR(N/Y)IPL]</p>
+<p>Thus TraPS-VarI can serve as an important tool for annotation of individual-specific genotyping dataset.</p>
+</div>
+</div>
+<div class="section" id="graphical-summary">
+<h1>Graphical Summary<a class="headerlink" href="#graphical-summary" title="Permalink to this headline">¶</a></h1>
 <img alt="_images/example-skt.png" src="_images/example-skt.png" />
-<div class="section" id="step-1-obtaining-input-vcf-file-typically-snp-genotyping-or-wgs-datasets">
-<h4>step-1: obtaining input &#8221;.vcf&#8221; file (typically SNP genotyping or WGS datasets)<a class="headerlink" href="#step-1-obtaining-input-vcf-file-typically-snp-genotyping-or-wgs-datasets" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="illustration-for-using-traps-vari">
+<h1>Illustration for using TraPS-VarI<a class="headerlink" href="#illustration-for-using-traps-vari" title="Permalink to this headline">¶</a></h1>
+<p>Step-wise illustration demonstrating how to use TraPS-VarI for analyzing a person’s SNP genotype dataset.</p>
+<div class="section" id="step-1-obtaining-vcf-file">
+<h2>step-1: Obtaining ‘.vcf’ file<a class="headerlink" href="#step-1-obtaining-vcf-file" title="Permalink to this headline">¶</a></h2>
 <img alt="_images/getting-patient.data.gif" src="_images/getting-patient.data.gif" />
 </div>
-<div class="section" id="step-2-exectuing-traps-vari">
-<h4>step-2: exectuing TraPS-VarI<a class="headerlink" href="#step-2-exectuing-traps-vari" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="step-2-executing">
+<h2>step-2: Executing<a class="headerlink" href="#step-2-executing" title="Permalink to this headline">¶</a></h2>
 <img alt="_images/script-init.gif" src="_images/script-init.gif" />
-<div class="section" id="progress">
-<h5>progress<a class="headerlink" href="#progress" title="Permalink to this headline">¶</a></h5>
+</div>
+<div class="section" id="step-3-progress">
+<h2>step-3: Progress<a class="headerlink" href="#step-3-progress" title="Permalink to this headline">¶</a></h2>
 <img alt="_images/progress.gif" src="_images/progress.gif" />
 </div>
-</div>
-<div class="section" id="step-3-finding-the-stat3-recruting-receptor-variants">
-<h4>step-3: finding the STAT3-recruting receptor variants<a class="headerlink" href="#step-3-finding-the-stat3-recruting-receptor-variants" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="step-4-validation">
+<h2>step-4: Validation<a class="headerlink" href="#step-4-validation" title="Permalink to this headline">¶</a></h2>
 <img alt="_images/output.gif" src="_images/output.gif" />
-</div>
-</div>
 </div>
 <div class="section" id="support">
 <h2>Support<a class="headerlink" href="#support" title="Permalink to this headline">¶</a></h2>
-<p>If you are having issues, please let me know:
+<p>Citation records will be updated as soon as possible.</p>
+<p>If you have any suggestions, please let me know:
 <a class="reference external" href="mailto:ulaganat&#37;&#52;&#48;biochem&#46;mpg&#46;de">ulaganat<span>&#64;</span>biochem<span>&#46;</span>mpg<span>&#46;</span>de</a></p>
 </div>
 </div>
@@ -174,24 +192,20 @@ Thus TraPS-VarI can serve as an important annotation tool for personalized medic
 </li>
 <li><a class="reference internal" href="#usage">Usage</a></li>
 <li><a class="reference internal" href="#how-it-works">How it works</a></li>
-<li><a class="reference internal" href="#graphical-summary">Graphical Summary</a></li>
-<li><a class="reference internal" href="#source-code">Source code</a><ul>
-<li><a class="reference internal" href="#binaries-for-linux-and-windows">Binaries for Linux and Windows</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#summary">Summary</a></li>
+<li><a class="reference internal" href="#source-code">Source code</a></li>
 <li><a class="reference internal" href="#biological-significance">Biological Significance</a><ul>
-<li><a class="reference internal" href="#example-1">Example-1</a><ul>
-<li><a class="reference internal" href="#identifying-the-stat3-enhancing-germline-variant-tmem9-p-y122y-which-is-found-in-about-31-of-the-general-population">Identifying the STAT3-enhancing germline variant TMEM9 <strong>p.Y122Y</strong> which is found in about 31% of the general population</a><ul>
-<li><a class="reference internal" href="#step-1-obtaining-input-vcf-file-typically-snp-genotyping-or-wgs-datasets">step-1: obtaining input &#8221;.vcf&#8221; file (typically SNP genotyping or WGS datasets)</a></li>
-<li><a class="reference internal" href="#step-2-exectuing-traps-vari">step-2: exectuing TraPS-VarI</a><ul>
-<li><a class="reference internal" href="#progress">progress</a></li>
+<li><a class="reference internal" href="#motif-1">Motif-1</a></li>
+<li><a class="reference internal" href="#motif-2">Motif-2</a></li>
+<li><a class="reference internal" href="#motif-3">Motif-3</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#step-3-finding-the-stat3-recruting-receptor-variants">step-3: finding the STAT3-recruting receptor variants</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li><a class="reference internal" href="#graphical-summary">Graphical Summary</a></li>
+<li><a class="reference internal" href="#illustration-for-using-traps-vari">Illustration for using TraPS-VarI</a><ul>
+<li><a class="reference internal" href="#step-1-obtaining-vcf-file">step-1: Obtaining ‘.vcf’ file</a></li>
+<li><a class="reference internal" href="#step-2-executing">step-2: Executing</a></li>
+<li><a class="reference internal" href="#step-3-progress">step-3: Progress</a></li>
+<li><a class="reference internal" href="#step-4-validation">step-4: Validation</a></li>
 <li><a class="reference internal" href="#support">Support</a></li>
 </ul>
 </li>
@@ -228,7 +242,7 @@ Thus TraPS-VarI can serve as an important annotation tool for personalized medic
       &copy;2017, Dr.rer.nat Vijay K. Ulaganathan.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.5</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.6</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
       
       |

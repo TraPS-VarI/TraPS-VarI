@@ -61,7 +61,7 @@ python TraPS_VarI.py {−p=<CHR: POS> −m=<REF/ALT >| −f=<filename> [options]
 	3. Protein position, 
 	4. Protein aminoacid change, 
 	5. Mutation effect,
-	6. SH2 motifs (with annotations CREATED, DESTROYED or PRESENT),
+	6. Tyrsoine-based sequence motifs such as SH2 binding YxxQ, ITAM & ITAM (with annotations CREATED, DESTROYED or PRESENT),
 	7. Topology domain, 
 	8. Hits in the TTD database and 
 	9. Hits in the DrugBank database.

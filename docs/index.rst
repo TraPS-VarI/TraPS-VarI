@@ -215,7 +215,7 @@ Citation Information: J Clin Invest. 2018;128(5):1867-1872. https://doi.org/10.1
 
 
 
-If you have any questions or suggestions, 
-please feel free to drop me a line at: ulaganat@icloud.com
+If you have any questions or suggestions, please feel free to drop me a line at: 
+	ulaganat@icloud.com
 
 

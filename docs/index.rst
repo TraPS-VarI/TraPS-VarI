@@ -206,8 +206,7 @@ Video Summary:
 https://vj-ulaganathan.github.io/
 
 
-Research Publication:
-*********************
+**Research Publication:**
 
 STAT3-enhancing germline mutations contribute to tumor-extrinsic immune evasion
 Daniel Kogan, … , Christian Faul, Vijay Kumar Ulaganathan
@@ -215,7 +214,7 @@ Published May 1, 2018; First published February 13, 2018
 Citation Information: 
 	J Clin Invest. 2018;128(5):1867-1872. https://doi.org/10.1172/JCI96708.
 
---------------------------------------------------------------------------------
+**------------------------------------------------------------------------------**
 If you have any questions or suggestions, please feel free to drop me a line at: 
 	ulaganat@icloud.com
 

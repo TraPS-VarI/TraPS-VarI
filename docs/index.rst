@@ -194,7 +194,7 @@ step-4: Validation
 Support
 *******
 The manuscript describing this tool is on the way. Citation records will be updated as soon as possible.
-Meanwhile, if you found this too useful you may cite as follows:
+Meanwhile, if you found "TraPS-VarI" useful you may cite our pre-print publication as follows:
 
 Kogan D, Ulaganathan VK. 2017. TraPS-VarI: a python module for the identification of STAT3 modulating germline receptor variants. bioRxiv doi: 10.1101/173047
 

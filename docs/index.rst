@@ -191,29 +191,29 @@ step-4: Validation
 
 
 
-Support
-*******
-The manuscript describing this tool is on the way. Citation records will be updated as soon as possible.
-Meanwhile, if you found "TraPS-VarI" useful you may cite our pre-print publication as follows:
+Publication
+***********
+The publication describing this tool is available freely (open access). 
 
-Kogan D, Ulaganathan VK. 2017. TraPS-VarI: a python module for the identification of STAT3 modulating germline receptor variants. bioRxiv doi: 10.1101/173047
+Cite this article
+Ulaganathan, V.K. TraPS-VarI: Identifying genetic variants altering phosphotyrosine based signalling motifs. Sci Rep 10, 8453 (2020). https://doi.org/10.1038/s41598-020-65146-2
+
 
 Example for usage:
 ******************
-If you are looking for an example on how to use this tool for biological research, you may find our recent paper published in "Journal of Clinical Investigation" useful:-
+If you are looking for an example on how to use this tool for biological research, you may find our paper published in "Journal of Clinical Investigation" useful:-
 
-STAT3-enhancing germline mutations contribute to tumor-extrinsic immune evasion
-Daniel Kogan, … , Christian Faul, Vijay Kumar Ulaganathan
-Published May 1, 2018; First published February 13, 2018
-Citation Information: 
-	J Clin Invest. 2018;128(5):1867-1872. https://doi.org/10.1172/JCI96708.
+Cite this article
+Kogan D, Grabner A, Yanucil C, Faul C & Ulaganathan V.K. STAT3-enhancing germline mutations contribute to tumor-extrinsic immune evasion. J Clin Invest 128(5):1867-1872 (2018). https://doi.org/10.1172/JCI96708.
+
 
 Video Summary:
 https://vj-ulaganathan.github.io/
 
 
+Support:
 ------------------------------------------------------------------------------
 If you have any questions or suggestions, please feel free to drop me a line at: 
-	ulaganat@icloud.com
+	vijaykumar.ulaganathan@med.uni-goettingen.de
 ------------------------------------------------------------------------------
 

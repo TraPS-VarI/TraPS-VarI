@@ -196,7 +196,8 @@ Publication
 The publication describing this tool is available freely (open access). 
 
 Cite this article
-Ulaganathan, V.K. TraPS-VarI: Identifying genetic variants altering phosphotyrosine based signalling motifs. Sci Rep 10, 8453 (2020). https://doi.org/10.1038/s41598-020-65146-2
+
+**Ulaganathan, V.K**. TraPS-VarI: Identifying genetic variants altering phosphotyrosine based signalling motifs. Sci Rep 10, 8453 (2020). https://doi.org/10.1038/s41598-020-65146-2
 
 
 Example for usage:
@@ -204,7 +205,8 @@ Example for usage:
 If you are looking for an example on how to use this tool for biological research, you may find our paper published in "Journal of Clinical Investigation" useful:-
 
 Cite this article
-Kogan D, Grabner A, Yanucil C, Faul C & Ulaganathan V.K. STAT3-enhancing germline mutations contribute to tumor-extrinsic immune evasion. J Clin Invest 128(5):1867-1872 (2018). https://doi.org/10.1172/JCI96708.
+
+Kogan D, Grabner A, Yanucil C, Faul C & **Ulaganathan V.K**. STAT3-enhancing germline mutations contribute to tumor-extrinsic immune evasion. J Clin Invest 128(5):1867-1872 (2018). https://doi.org/10.1172/JCI96708.
 
 
 Video Summary:

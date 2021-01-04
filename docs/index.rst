@@ -107,7 +107,7 @@ Chr1 1211745 C/T (rs776902723): TNFRSF4_p.R241Q = [YLL(R/Q)]
 Motif-2
 ********
 
-* The immunoreceptor tyrosine-based **inhibition** motifs (ITIM) are present in the cytoplasmic domains of transmembrane receptors of virtually all immune cells. Recruitment of specific phosphatases to the tyrosine-phosphorylated ITIM results in the complete inhibition or downmodulation of immune cell effector functions (Muta, T et al, Nature 368, 70–73 (1994): https://doi.org/10.1038/368070a0 & Daëron et al, Immunity 95, 90134-5 (1995): https://doi.org/10.1016/1074-7613
+* The immunoreceptor tyrosine-based **inhibition** motifs (ITIM) are present in the cytoplasmic domains of transmembrane receptors of virtually all immune cells. Recruitment of specific phosphatases to the tyrosine-phosphorylated ITIM results in the complete inhibition or downmodulation of immune cell effector functions (Muta, T et al, Nature 368, 70–73 (1994): https://doi.org/10.1038/368070a0 & Daëron et al, Immunity 95, 90134-5 (1995): https://doi.org/10.1016/1074-7613)
 
 **An example of TraPS-VarI identified ITIM motif-creating germline variant:**
 

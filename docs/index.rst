@@ -97,7 +97,7 @@ Biological Significance
 Motif-1
 ********
 
-* The **STAT3 binding** motifs (YXXQ) are present in the juxtamembrane regions of many transmembrane receptors that are expressed in many cell types. Recruitment of STAT3 to the tyrosine-phosphorylated YXXQ motifs significantly enhances the amplitude of STAT3 signaling. Depending on the cell/tissue-specific expression patterns of the receptor variant, pleiotropic effects are expected in vivo. Ubiquitous expression of STAT3-enhancing, gain-of-function SNPs in the germline genome contributes to accelerated cancer progression & poor prognosis. However, cells are rendered sensitive in a genotype/allele-specific manner to growth inhibition by small molecule or RNA interference mediated inhibition of STAT3 signaling pathways (Ulaganathan et al, Nature 2015: https://doi.org/10.1038/nature16449).
+* The **STAT3 binding** motifs (YXXQ) are present in the juxtamembrane regions of many transmembrane receptors that are expressed in many cell types. Recruitment of STAT3 to the tyrosine-phosphorylated YXXQ motifs significantly enhances the amplitude of STAT3 signaling. Depending on the cell/tissue-specific expression patterns of the receptor variant, pleiotropic effects are expected in vivo. Ubiquitous expression of STAT3-enhancing, gain-of-function SNPs in the germline genome contributes to accelerated cancer progression & poor prognosis. However, cells are rendered sensitive in a genotype/allele-specific manner to growth inhibition by small molecule or RNA interference mediated inhibition of STAT3 signaling pathways (Ulaganathan et al, Nature 528, 570–574 (2015): https://doi.org/10.1038/nature16449).
 
 **An example of TraPS-VarI identified STAT3 motif-creating germline variant:**
 
@@ -107,7 +107,7 @@ Chr1 1211745 C/T (rs776902723): TNFRSF4_p.R241Q = [YLL(R/Q)]
 Motif-2
 ********
 
-* The immunoreceptor tyrosine-based **inhibition** motifs (ITIM) are present in the cytoplasmic domains of transmembrane receptors of virtually all immune cells. Recruitment of specific phosphatases to the tyrosine-phosphorylated ITIM results in the complete inhibition or downmodulation of immune cell effector functions (Daëron et al, Immunity 1995: https://doi.org/10.1016/1074-7613(95)90134-5)
+* The immunoreceptor tyrosine-based **inhibition** motifs (ITIM) are present in the cytoplasmic domains of transmembrane receptors of virtually all immune cells. Recruitment of specific phosphatases to the tyrosine-phosphorylated ITIM results in the complete inhibition or downmodulation of immune cell effector functions (Muta, T et al, Nature 368, 70–73 (1994): https://doi.org/10.1038/368070a0 & Daëron et al, Immunity 95, 90134-5 (1995): https://doi.org/10.1016/1074-7613
 
 **An example of TraPS-VarI identified ITIM motif-creating germline variant:**
 
@@ -117,7 +117,7 @@ Chr2 203734829 A/G (rs200221759): CD28_p.M194V = [SDYMN(M/V)]
 Motif-3
 ********
 
-* The immunoreceptor tyrosine-based **activation** motif (ITAM) was initially recognized as a common sequence in the cytoplasmic tails of the signaling chains associated with the T-cellreceptor (TCR), B-cell receptor (BCR), and certain Fc receptors. Dual-tyrosine phosphorylated ITAM serve as docking sites for various proteins such as the tandem SH2 domains of Syk family PTK, viz., ZAP-70 or Syk and are important for positive signal transduction in immune cells (Reth, Nature 1989: https://doi.org/10.1038/338383b0).
+* The immunoreceptor tyrosine-based **activation** motif (ITAM) was initially recognized as a common sequence in the cytoplasmic tails of the signaling chains associated with the T-cellreceptor (TCR), B-cell receptor (BCR), and certain Fc receptors. Dual-tyrosine phosphorylated ITAM serve as docking sites for various proteins such as the tandem SH2 domains of Syk family PTK, viz., ZAP-70 or Syk and are important for positive signal transduction in immune cells (Reth M, Nature 338, 383–384 (1989): https://doi.org/10.1038/338383b0).
 
 **An example of TraPS-VarI identified ITAM motif-creating germline variant:**
 

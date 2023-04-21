@@ -3,3 +3,6 @@ TraPS VarI is a tool to identify membrane-proximal tyrosine-based sequence motif
 
 For Source code and Documentation, Please Visit:
 http://traps-vari.readthedocs.io/
+
+The Online Version is now under the following URL:
+https://webapp-traps-vari.org

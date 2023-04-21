@@ -83,11 +83,11 @@ Summary
 *****************
 .. image:: image/summary.png
 
-***********
-Source code
-***********
+*************
+Online WebApp
+*************
 
-https://gitlab.com/VJ-Ulaganathan/TraPS-VarI
+https://webapp-traps-vari.org
 
 
 ***********************

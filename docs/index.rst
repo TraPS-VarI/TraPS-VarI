@@ -83,9 +83,9 @@ Summary
 *****************
 .. image:: image/summary.png
 
-*************
+**************
 Online WebApp
-*************
+**************
 
 https://www.traps-vari.org
 

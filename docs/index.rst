@@ -87,7 +87,7 @@ Summary
 Online WebApp
 *************
 
-https://webapp-traps-vari.org
+https://www.traps-vari.org
 
 
 ***********************

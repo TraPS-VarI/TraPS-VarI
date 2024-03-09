@@ -12,7 +12,7 @@
 
 **TraPS-VarI** (Transmemrane Protein Sequence Variant Identifier) is a tool to map the single nucleotide polymorphism mutations recorded in **.vcf** (VCF 4.0) files to the protein topology and predict the effect of an individual-specific genotype on the presence or absence of membrane-proximal SH2 binding motifs such as,
 
-* STAT3 binding site [YxxQ],
+* SRTMs (STAT3 recruiting tyrosine-based membrane-proximal docking site [YxxQ],
 * ITIMs (immunoreceptor tyrosine-based **inhibition** motif) [S/I/V/LxYxxI/V/L]
 * ITAMs (immunoreceptor tyrosine-based **activation** motif) [YxxI/Lx(6-30)YxxI/L]
 

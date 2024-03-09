@@ -90,9 +90,9 @@ Online WebApp
 https://www.traps-vari.org
 
 
-***********************
+************************
 Biological Significance
-***********************
+************************
 
 Motif-1
 ********
